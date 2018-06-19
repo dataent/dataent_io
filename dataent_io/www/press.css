@@ -1,0 +1,14 @@
+.dataent-coverage .media-object {
+	width: 150px;
+}
+
+.dataent-coverage {
+	border-bottom: 1px solid #d1d8dd;
+	padding: 15px;
+	margin: 15px -15px;
+}
+
+.dataent-coverage:last-child {
+	border-bottom: none;
+}
+

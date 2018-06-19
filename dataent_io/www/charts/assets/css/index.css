@@ -1,0 +1,38 @@
+.demo-tip {
+	margin-top: 1rem;   /* SAME 2 */
+	font-size: 1rem;
+}
+section figure {
+	border: 1px solid #ddd; /* SAME 3 */
+	border-radius: 3px;
+}
+
+p.new-context {
+	margin-top: 2rem;
+}
+
+
+/* BaseCSS */
+.mt1 {
+	margin-top: 1rem; /* SAME 2 */
+}
+.mv1 {
+	margin: 2em 0 1em 0;
+}
+.hide {
+	display: none;
+}
+
+
+/* Moon images */
+.image-container {
+	padding: 3px;
+}
+.image-container img{
+	display: block;
+    width: 100%;
+}
+.content-data p {
+	margin-bottom: 5px;
+	font-size: 12px;
+}

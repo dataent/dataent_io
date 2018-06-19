@@ -1,0 +1,2 @@
+dataent.core.web_form.edit_profile.edit_profile
+dataent.core.web_form.edit_profile

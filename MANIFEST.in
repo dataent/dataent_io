@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dataent_io *.css
+recursive-include dataent_io *.csv
+recursive-include dataent_io *.html
+recursive-include dataent_io *.ico
+recursive-include dataent_io *.js
+recursive-include dataent_io *.json
+recursive-include dataent_io *.md
+recursive-include dataent_io *.png
+recursive-include dataent_io *.py
+recursive-include dataent_io *.svg
+recursive-include dataent_io *.txt
+recursive-exclude dataent_io *.pyc

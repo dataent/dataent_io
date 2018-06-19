@@ -1,0 +1,39 @@
+{% extends "templates/base.html" %}
+{% block title %}Dataent Charts: Simple and Modern SVG Charts{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="charts/assets/css/index.css" media="screen">
+
+<header>
+<section class="top-section">
+	<div class='container'>
+		<h1>Dataent Charts</h1>
+		<p class="lead">
+			GitHub-inspired simple and modern SVG charts for the web with zero dependencies.
+		</p>
+		<p class='mt-3 mb-5'>
+			<a href='/charts/docs' class='btn btn-dark btn-sm'>Documentation</a>
+		</p>
+
+		<figure id="line-composite-1" class="border"></figure>
+		<p class="demo-tip">Click or use arrow keys to navigate data points</p>
+		<figure id="bar-composite-1" class="border"></figure>
+	</div>
+</section>
+</header>
+
+<section class="section-padding text-center">
+	<div class='container'>
+	<a class ="btn btn-dark mr-3" href="/charts/docs">
+		Get Started</a>
+	<a class ="btn btn-secondary" href="https://github.com/dataent/charts/archive/master.zip">
+		Download</a>
+	<p class="mt-3">
+		<a href="https://github.com/dataent/charts" target="_blank">View on GitHub</a></p>
+	<p class='text-muted'>License: MIT</p>
+
+	<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+	<script src="/charts/index.min.js"></script>
+	</div>
+</section>
+
+{% endblock %}

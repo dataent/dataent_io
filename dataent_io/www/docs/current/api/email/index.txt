@@ -1,0 +1,7 @@
+dataent.email.inbox
+dataent.email.test_email_body
+dataent.email.email_body
+dataent.email.receive
+dataent.email.queue
+dataent.email.smtp
+dataent.email

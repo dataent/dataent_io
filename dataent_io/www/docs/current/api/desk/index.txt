@@ -1,0 +1,15 @@
+dataent.desk.like
+dataent.desk.notifications
+dataent.desk.calendar
+dataent.desk.user_progress
+dataent.desk.moduleview
+dataent.desk.tags
+dataent.desk.reportview
+dataent.desk.search
+dataent.desk.desk_page
+dataent.desk.gantt
+dataent.desk.treeview
+dataent.desk.query_builder
+dataent.desk.query_report
+dataent.desk.report_dump
+dataent.desk

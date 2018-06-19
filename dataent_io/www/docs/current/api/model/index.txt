@@ -1,0 +1,15 @@
+dataent.model.meta
+dataent.model.naming
+dataent.model.delete_doc
+dataent.model.create_new
+dataent.model.sync
+dataent.model.mapper
+dataent.model.db_schema
+dataent.model.rename_doc
+dataent.model.workflow
+dataent.model.docfield
+dataent.model.dynamic_links
+dataent.model.db_query
+dataent.model.document
+dataent.model
+dataent.model.base_document

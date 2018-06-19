@@ -1,0 +1,9 @@
+dataent.config.core
+dataent.config.integrations
+dataent.config.setup
+dataent.config.website
+dataent.config.desktop
+dataent.config.tools
+dataent.config.docs
+dataent.config
+dataent.config.desk

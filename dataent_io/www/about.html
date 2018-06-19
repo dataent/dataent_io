@@ -1,0 +1,94 @@
+{% extends "templates/base.html" %}
+{% block content %}
+
+<section class="top-section">
+	<div class='container'>
+	<h1>We Love Crafting Experiences</h1>
+	<p class='lead'>Established in 2008, we are an internet company based out of Mumbai, India. Our flagship product EPAAS is an award-winning ERP loved by businesses worldwide.</p>
+	<p>
+		<a class="mt-5 btn btn-dark" href="/story">Read the full story.</a>
+	</p>
+	</div>
+</section>
+
+<section class="section-padding text-center section-bg">
+	<div class='container'>
+	<h3 class='mb-5'>Meet the Team</h3>
+	<div class='row'>
+	{% for m in team %}
+	<div class="col-sm-3 mb-4 person">
+		<img class="greyscale img-fluid" src="/assets/dataent_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
+		<a href="https://dataent.io/blog?blogger={{ m.blogger }}">
+			<h5 class="mt-3 font-weight-normal">{{ m.name }}</h5>
+		</a>
+		<p class='text-muted'>{{ m.role }}
+		{% if m.twitter %}
+		<br><a  class='text-muted' href="https://twitter.com/{{ m.twitter }}" target="_blank">
+				@{{ m.twitter }}</a>
+		{% elif m.linkedin %}
+		<br><a  class='text-muted'href="{{ m.linkedin }}" target="_blank">
+				LinkedIn Profile</a>
+		{% elif m.medium %}
+		<br><a  class='text-muted' href="https://medium.com/@{{ m.medium }}" target="_blank">
+				M@{{ m.medium }}</a>
+		{% endif %}
+		</p>
+	</div>
+	{% endfor %}
+	</div>
+	</div>
+</section>
+
+<section class="section-padding">
+	<div class='container'>
+	<div class="text-center">
+		<h4>Join us in making awesome open source software for the world</h4>
+		<p class='lead'>
+			Working at Dataent is like working for an open source community, except the fact that you get paid for it.</p>
+		<div class='mt-4'><a class = 'btn btn-dark btn-sm' href=/jobs>See Open Positions</a></div>
+	</div>
+	</div>
+</section>
+<section class="section-padding section-bg contact">
+	<div class='container'>
+	<div class='row'>
+	<div class="col-sm-6" id="contact">
+		<h4>Write to us</h3>
+		<p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
+		<div class='text-muted mt-3'>Subject</div>
+		<input class="form-control" type="text" name="subject">
+		<div class='text-muted mt-3'>Your email</div>
+		<input class="form-control" type="text" name="email">
+		<div class='text-muted mt-3'>Message</div>
+		<textarea class="form-control" name="message" style="height: 200px;"></textarea>
+		<a href=# id="send" class="btn btn-dark btn-send form-control mt-4">Send</a>
+	</div>
+	<div class="mt-5 mt-sm-0 col-sm-6">
+		<h4>Visit our office</h4>
+		<p>D/324 Neelkanth Business Park,<br> Vidyavihar West,<br> Mumbai,<br> Maharashtra - 400086,<br> India</p>
+		<p>Skype: <b>epaas</b></p>
+		<p>Phone: <a href="tel:080-339-23819">080-339-23819</a></p>
+		<!-- <img class="dataent-hero mx-5 mt-5" src="/assets/dataent_theme/img/office-map.svg" class="office-map"> -->
+		<h4 class="mt-5">Social</h4>
+		<p>Twitter: <a href="https://twitter.com/epaas" target="_blank"><b>@epaas</b></a></p>
+		<p>Medium: <a href="https://medium.com/frapp%C3%A9-thoughts" target="_blank"><b>Dataent Thoughts</b></a></p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/company/dataent-epaas/" target="_blank"><b>Dataent Technologies Private Limited</b></a></p>
+		<p>Facebook: <a href="https://www.facebook.com/EPAAS/" target="_blank"><b>facebook.com/EPAAS</b></a></p>
+	</div>
+	</div>
+	</div>
+</section>
+
+<style>
+	.contact p {
+		font-size: 16px;
+	}
+	.person a {
+		text-decoration: none;
+	}
+</style>
+
+<script>
+	{% include "templates/includes/contact.js" %}
+</script>
+{% endblock %}
